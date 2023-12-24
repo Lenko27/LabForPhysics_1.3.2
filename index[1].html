@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="form">
+        <label for="eq">Введите уравнение:</label>
+        <input type="text" id="eq" value="sin (x)"/>
+        <input type="submit" value="Построить графики"/>
+
+        <div>
+            <p style="right:  0">
+                x^a
+                <br>
+                sin(x)
+                <br>
+                cos(x)
+                <br>
+                tan(x)
+                <br>
+                sqrt(x)
+                <br>
+                log(x)
+                <br>
+                e
+                <br>
+                pi
+            </p>
+        </div>
+    </form>
+
+    <div class="graph-container">
+        <div id="plot" class="graph"></div>
+        <div id="derivative1" class="graph"></div>
+        <div id="derivative2" class="graph"></div>
+    </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+<script src="https://unpkg.com/mathjs@12.2.1/lib/browser/math.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
