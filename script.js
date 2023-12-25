@@ -42,7 +42,7 @@ function draw() {
 
         const layout = {
             margin: { t: 30 },
-            yaxis: { title: 'x(t)', domain: [0, 1] },
+            yaxis: { title: 'x(t), м', domain: [0, 1] },
             width: 300,
             height: 300
         };
