@@ -48,13 +48,13 @@ function draw() {
         };
 
         const dataPlot = [trace1];
-        Plotly.newPlot('plot', dataPlot, { ...layout, xaxis: { title: 'м' } });
+        Plotly.newPlot('plot', dataPlot, { ...layout, xaxis: { title: 't, c' } });
 
         const dataVelocity = [trace2];
-        Plotly.newPlot('derivative1', dataVelocity, { ...layout, xaxis: { title: 'м/с' }, yaxis: { title: "v(t)", domain: [0, 1] } });
+        Plotly.newPlot('derivative1', dataVelocity, { ...layout, xaxis: { title: 't, c' }, yaxis: { title: "v(t), м/c", domain: [0, 1] } });
 
         const dataAcceleration = [trace3];
-        Plotly.newPlot('derivative2', dataAcceleration, { ...layout, xaxis: { title: 'м/с^2' }, yaxis: { title: "a(t)", domain: [0, 1] } });
+        Plotly.newPlot('derivative2', dataAcceleration, { ...layout, xaxis: { title: 't, c' }, yaxis: { title: "a(t), м/c^2", domain: [0, 1] } });
 
     } catch (err) {
         alert("Неверная формула.");
